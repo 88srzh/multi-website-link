@@ -34,11 +34,16 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     var urlList = [
-      'https://www.marvel.com/articles/movies/falcon-and-winter-soldier-entertainment-weekly-odd-couple',
-      'https://www.marvel.com/articles/movies/spider-man-no-way-home-tom-holland-title-reveal',
-      'https://www.marvel.com/articles/comics/heroes-reborn-newly-revealed-covers-june',
-      'https://www.marvel.com/articles/comics/white-vision-reprogrammed-disassembled-comics',
-      'https://www.marvel.com/articles/comics/avengers-curse-of-the-man-thing-meet-the-harrower',
+      // 'https://www.marvel.com/articles/movies/falcon-and-winter-soldier-entertainment-weekly-odd-couple',
+      'https://www.mirf.ru/book/majkl-suenvik-mat-zheleznogo-drakona',
+      'https://www.mirf.ru/book/samuel-delany-dhalgren',
+      // 'https://www.marvel.com/articles/movies/spider-man-no-way-home-tom-holland-title-reveal',
+      'https://www.mirf.ru/book/jonathan-french-the-grey-bastards-serye-ublyudki',
+      'https://www.mirf.ru/book/gilermo-del-toro-chak-hogan-nezrimye/',
+      'https://www.mirf.ru/book/stiven-king-budet-krov',
+      // 'https://www.marvel.com/articles/comics/heroes-reborn-newly-revealed-covers-june',
+      // 'https://www.marvel.com/articles/comics/white-vision-reprogrammed-disassembled-comics',
+      // 'https://www.marvel.com/articles/comics/avengers-curse-of-the-man-thing-meet-the-harrower',
     ];
     return Scaffold(
       appBar: AppBar(
