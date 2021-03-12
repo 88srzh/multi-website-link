@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_link_preview/flutter_link_preview.dart';
 
+import 'screens/news_details.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -48,7 +50,8 @@ class _MyHomePageState extends State<MyHomePage> {
           itemCount: urlList.length,
           itemBuilder: (context, index) {
             return GestureDetector(
-              onTap: null,
+              onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => NewsDetails(urlList[index]))),
               child: FlutterLinkPreview(
                 url: urlList[index],
                 bodyStyle: TextStyle(fontSize: 18.0),

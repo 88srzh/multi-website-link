@@ -42,9 +42,26 @@ class _NewsDetailsState extends State<NewsDetails> {
                     IconButton(
                       icon: Icon(Icons.arrow_back),
                       color: Colors.black,
-                      onPressed: () {},
+                      onPressed: () => Navigator.of(context).pop(),
+                      alignment: Alignment.topLeft,
                     )
                   ],
+                ),
+                Container(
+                  padding: const EdgeInsets.all(10.0),
+                  child: progress < 1.0
+                      ? LinearProgressIndicator(
+                          value: progress,
+                        )
+                      : Container(),
+                ),
+                Expanded(
+                  child: WebView(
+                    initialUrl: widget.url,
+                    javascriptMode: JavascriptMode.unrestricted,
+                    onWebViewCreated: (controller) =>
+                        _controller.complete(controller),
+                  ),
                 )
               ],
             ),
